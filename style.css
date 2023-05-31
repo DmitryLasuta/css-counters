@@ -1,0 +1,39 @@
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.outer-list {
+  border: 1px solid;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.outer-list {
+  counter-reset: chapter;
+}
+
+h2::before {
+  counter-increment: chapter;
+  content: "Глава: " counter(chapter) " ";
+}
+
+.inner-list {
+  counter-reset: subchapter;
+}
+
+h3::before {
+  counter-increment: subchapter;
+  content: counter(chapter) "." counter(subchapter) " ";
+}
