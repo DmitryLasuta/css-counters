@@ -1,3 +1,3 @@
 # css-counters
 
-https://dmitriylasuta.github.io/css-counters/
+https://dmitrylasuta.github.io/css-counters/
