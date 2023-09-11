@@ -26,7 +26,7 @@ h2 {
 
 h2::before {
   counter-increment: chapter;
-  content: "Глава: " counter(chapter) " ";
+  content: 'Chapter: ' counter(chapter) ' ';
 }
 
 .inner-list {
@@ -35,5 +35,5 @@ h2::before {
 
 h3::before {
   counter-increment: subchapter;
-  content: counter(chapter) "." counter(subchapter) " ";
+  content: counter(chapter) '.' counter(subchapter) ' ';
 }
